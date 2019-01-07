@@ -25,14 +25,7 @@ function fetchData(callback) {
 }
 
 function sortResults(data) {
-    if (data.length === 0) {
-        data = data[0]
-    } else {
-        data = {
-            'sheet1': data[0],
-            'sheet2': data[1]
-        }
-    }
+    data = { candidates: data[0] };
 
     return data;
 }
