@@ -1,0 +1,45 @@
+.uit-declared__candidates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.uit-declared__avatar {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: $c-blue;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.uit-declared__avatar-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.uit-declared__name {
+    display: block;
+    margin: 0;
+    font-family: 'Guardian Egyptian Web';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $c-blue;
+}
+
+.uit-declared__position {
+    display: block;
+    margin: 0;
+    font-family: 'Guardian Egyptian Web';
+    font-weight: normal;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $c-black;
+    margin-bottom: 4px;
+}

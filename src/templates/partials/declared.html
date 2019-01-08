@@ -1,9 +1,23 @@
 <div class='uit-declared'>
     <div class='uit-container'>
-        {{#each candidates}}
-            {{#if_eq status 'Declared'}}
-                {{ name }}
-            {{/if_eq}}
-        {{/each}}
+        <div class='uit-content'>
+            <h3 class='uit-subhead'>Who is running?</h3>
+            <div class='uit-declared__candidates'>
+                {{#each candidates}}
+                    {{#if_eq status 'Declared'}}
+                        <div class='uit-declared__candidate'>
+                            <div class='uit-declared__avatar'>
+                                <img class='uit-declared__avatar-image' src='{{ path }}/assets/candidates/{{ handlise name }}.png' />
+                            </div>
+                            <span class='uit-declared__name'>{{ name }}</span>
+                            <span class='uit-declared__position'>{{ currentPosition }}</span>
+                            <div class='uit-declared__description'>
+                                <p>Proin blandit, enim vitae egestas posuere, neque elit ultricies dui, vel mattis nibh enim ac lorem. Maecenas molestie nisl sit amet velit dictum lobortis. Aliquam erat volutpat. Proin blandit, enim vitae egestas posuere, neque elit ultricies dui, vel mattis nibh enim ac lorem. Maecenas molestie nisl sit amet velit dictum lobortis. Aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                    {{/if_eq}}
+                {{/each}}
+            </div>
+        </div>
     </div>
 </div>
