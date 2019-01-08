@@ -1,0 +1,45 @@
+<div class='uit-maybes'>
+    <div class='uit-container'>
+        <div class='uit-maybes__table'>
+            <div class='uit-maybes__row uit-maybes__row--titling'>
+                <div class='uit-maybes__candidate'></div>
+                <div class='uit-maybes__param'>Visited Iowa</div>
+                <div class='uit-maybes__param'>Released a book</div>
+                <div class='uit-maybes__param'>Appeared in polls</div>
+                <div class='uit-maybes__quote'>In their words</div>
+            </div>
+            {{#each candidates}}
+                {{#if_eq status 'Declared' }}
+                {{ else }}
+                    <div class='uit-maybes__row'>
+                        <div class='uit-maybes__candidate'>
+                            <div class='uit-maybes__avatar'>
+                                <img src='{{ path }}/assets/candidates/{{ handlise name }}.png' class='uit-maybes__avatar-image' />
+                            </div>
+                            <span class='uit-maybes__name'>{{ name }}</span>
+                            <span class='uit-maybes__position'>{{ currentPosition }}</span>
+                        </div>
+                        <div class='uit-maybes__param uit-maybes__param--iowa'>
+                            {{#if iowa}}
+                                {{> icons/check }}
+                            {{/if}}
+                        </div>
+                        <div class='uit-maybes__param uit-maybes__param--book'>
+                            {{#if book}}
+                                {{> icons/check }}
+                            {{/if}}
+                        </div>
+                        <div class='uit-maybes__param uit-maybes__param--polled'>
+                            {{#if polled}}
+                                {{> icons/check }}
+                            {{/if}}
+                        </div>
+                        <div class='uit-maybes__quote'>
+                            <p>Lorem ipsum dolor sit amet, we'll see though. We need to take down Trump</p>
+                        </div>
+                    </div>
+                {{/if_eq}}
+            {{/each}}
+        </div>
+    </div>
+</div>

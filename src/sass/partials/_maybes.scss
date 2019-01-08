@@ -1,0 +1,70 @@
+.uit-maybes {
+    width: 100%;
+}
+
+.uit-maybes__row {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+    grid-gap: 4px;
+    margin-bottom: 4px;
+
+    > * {
+        border-top: 1px solid $c-light-grey;
+        border-left: 1px solid $c-light-grey;
+        padding: 4px;
+    }
+}
+
+.uit-maybes__row--titling {
+    font-family: 'Guardian Egyptian Web';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $c-black;
+}
+
+.uit-maybes__candidate {
+    font-family: 'Guardian Egyptian Web';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $c-black;
+}
+
+.uit-maybes__name {
+    color: $c-blue;
+}
+
+.uit-maybes__position {
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+}
+
+.uit-maybes__avatar {
+    position: relative;
+    background-color: $c-blue;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-top: 4px;
+    float: left;
+    margin-right: 4px;
+    overflow: hidden;
+}
+
+.uit-maybes__avatar-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.uit-maybes__param {
+    svg {
+        height: 36px;
+        display: block;
+        margin: 0 auto;
+    }
+}
