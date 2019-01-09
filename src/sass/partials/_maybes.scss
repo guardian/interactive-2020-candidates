@@ -21,9 +21,11 @@
     line-height: 1.2;
     font-weight: normal;
     color: $c-black;
+    padding-bottom: 0;
 
     &.is-fixed {
         position: fixed;
+        z-index: 2;
         top: 0;
         background-color: $c-white;
         max-width: 620px;
