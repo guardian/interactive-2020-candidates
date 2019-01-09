@@ -5,12 +5,12 @@
     }
 
     p a {
-        color: $c-red;
-        border-bottom: 1px solid mix($c-red, $c-white, 20%);
+        color: $c-dem;
+        border-bottom: 1px solid mix($c-dem, $c-white, 20%);
         text-decoration: none;
 
         &:hover {
-            border-bottom-color: $c-red;
+            border-bottom-color: $c-dem;
         }
     }
 
@@ -21,8 +21,8 @@
 
 .uit-drop {
     @include dropCap(4);
-    font-weight: bold;
-    color: $c-red;
+    font-weight: 600;
+    color: $c-dem;
 }
 
 .uit-subhead {
@@ -30,8 +30,4 @@
     font-size: 24px;
     font-weight: 600;
     padding-top: 12px;
-}
-
-.uit-button {
-    @include button($c-white, $c-red);
 }

@@ -5,21 +5,8 @@
 }
 
 .uit-declared__avatar {
-    position: relative;
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
-    background-color: $c-blue;
-    overflow: hidden;
+    max-width: 120px;
     margin-bottom: 4px;
-}
-
-.uit-declared__avatar-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
 .uit-declared__name {
@@ -29,7 +16,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
-    color: $c-blue;
+    color: $c-dem;
 }
 
 .uit-declared__position {

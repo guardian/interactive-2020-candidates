@@ -17,17 +17,17 @@
     border-radius: 20px;
     float: left;
     margin-right: 4px;
-    border: 1px solid $c-red;
+    border: 1px solid $c-dem;
 
     .uit-icon {
-        fill: $c-red;
+        fill: $c-dem;
         width: 100%;
         height: 100%;
         margin: auto;
     }
 
     &:hover {
-        background-color: $c-red;
+        background-color: $c-dem;
 
         .uit-icon {
             fill: $c-white;
