@@ -16,11 +16,22 @@
 }
 
 .uit-maybes__row--titling {
-    font-family: 'Guardian Egyptian Web';
-    font-size: 18px;
+    font-family: 'Guardian Sans Web';
+    font-size: 16px;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: normal;
     color: $c-black;
+
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        background-color: $c-white;
+        max-width: 620px;
+    }
+
+    .uit-maybes__candidate {
+        border: 0;
+    }
 }
 
 .uit-maybes__candidate {
