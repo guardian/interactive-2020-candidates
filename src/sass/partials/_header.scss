@@ -3,7 +3,8 @@
 }
 
 .uit-header__headline {
-    padding: 6px 0;
+    padding-bottom: 6px;
+    margin: 0;
     font-family: 'Guardian Egyptian Web';
     font-weight: 600;
     font-size: 24px;
@@ -19,6 +20,7 @@
     color: $c-red;
 }
 
+.uit-header__tag,
 .uit-header__standfirst {
     padding: 3px 0 0;
     font-family: 'Guardian Egyptian Web';
@@ -31,8 +33,30 @@
     }
 }
 
-.uit-header .uit-share {
-    padding-bottom: 24px;
+.uit-header__tag {
+    color: $c-dem;
+    display: block;
+    padding: 8px 0 0px;
+    font-weight: 600;
+
+    @include mq(mobileLandscape) {
+        padding-top: 12px;
+    }
+}
+
+.uit-header__meta-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0 24px;
+
+    .uit-share {
+        flex-shrink: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 6px;
+    }
 }
 
 .uit-header__byline {
@@ -42,10 +66,25 @@
     font-style: italic;
     font-weight: 400;
     color: $c-dem;
+    flex-shrink: 2;
+    margin: 0;
 
     a {
         font-style: normal;
         font-weight: 600;
         color: $c-dem;
     }
+}
+
+.uit-header__image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.uit-header__caption {
+    font-family: 'Guardian Sans Web';
+    font-size: 16px;
+    color: $c-dark-grey;
+    margin: 0;
+    padding-bottom: 24px;
 }
