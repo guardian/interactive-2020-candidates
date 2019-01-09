@@ -35,7 +35,9 @@
                                 {{/if}}
                             </div>
                             <div class='uit-maybes__quote'>
-                                <p>Lorem ipsum dolor sit amet, we'll see though. We need to take down Trump</p>
+                                {{#if copy}}
+                                    {{{ marked copy }}}
+                                {{/if}}
                             </div>
                         </div>
                     {{/if_eq}}
