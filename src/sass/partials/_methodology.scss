@@ -1,0 +1,12 @@
+.uit-methodology {
+    p {
+        @include bodyCopy();
+        margin: 0;
+        font-family: 'Guardian Sans Web';
+        color: $c-dark-grey;
+    }
+
+    .uit-content {
+        padding: 12px 0;
+    }
+}
