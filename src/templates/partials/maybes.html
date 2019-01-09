@@ -5,11 +5,11 @@
             <p>Proin blandit, enim vitae egestas posuere, neque elit ultricies dui, vel mattis nibh enim ac lorem. Maecenas molestie nisl sit amet velit dictum lobortis. Aliquam erat volutpat.</p>
             <div class='uit-maybes__table'>
                 <div class='uit-maybes__row uit-maybes__row--titling'>
-                    <div class='uit-maybes__candidate'></div>
-                    <div class='uit-maybes__param'>Visited Iowa</div>
-                    <div class='uit-maybes__param'>Released a book</div>
-                    <div class='uit-maybes__param'>Appeared in polls</div>
-                    <div class='uit-maybes__quote'>In their words</div>
+                    <div class='uit-maybes__row-title'></div>
+                    <div class='uit-maybes__row-title'>Visited Iowa</div>
+                    <div class='uit-maybes__row-title'>Released a book</div>
+                    <div class='uit-maybes__row-title'>Appeared in polls</div>
+                    <div class='uit-maybes__row-title'>In their words</div>
                 </div>
                 {{#each candidates}}
                     {{#if_eq status 'Declared' }}
@@ -36,6 +36,7 @@
                             </div>
                             <div class='uit-maybes__quote'>
                                 {{#if copy}}
+                                    {{> icons/quotemark }}
                                     {{{ marked copy }}}
                                 {{/if}}
                             </div>
