@@ -11,7 +11,7 @@
 .uit-maybes__row {
     display: grid;
     grid-template-columns: 1fr repeat(3, 38px);
-    grid-auto-rows: auto auto;
+    grid-auto-rows: minmax(min-content, max-content) minmax(min-content, max-content);
     border-bottom: 1px solid $c-light-grey;
     padding: 6px 0;
 
