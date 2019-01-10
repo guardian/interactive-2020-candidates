@@ -43,6 +43,7 @@
         background-color: $c-white;
         left: 10px;
         right: 10px;
+        width: 100%;
 
         @include mq(mobileLandscape) {
             left: 20px;

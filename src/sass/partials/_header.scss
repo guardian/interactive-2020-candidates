@@ -94,8 +94,12 @@
 }
 
 .uit-header__image {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
+
+    @include mq(tablet) {
+        max-width: 100%;
+    }
 }
 
 .uit-header__caption {
