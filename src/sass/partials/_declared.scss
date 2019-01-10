@@ -4,8 +4,15 @@
     grid-gap: 20px;
 }
 
+.uit-declared__candidate {
+    border-top: 1px solid $c-light-grey;
+    margin: 12px 0;
+}
+
 .uit-declared__avatar {
-    max-width: 220px;
+    max-width: 260px;
+    margin: 0 auto;
+    display: block;
     margin-bottom: 4px;
 }
 
@@ -15,18 +22,16 @@
     font-family: 'Guardian Egyptian Web';
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1.3;
     color: $c-dem;
 }
 
 .uit-declared__position {
     display: block;
     margin: 0;
-    font-family: 'Guardian Egyptian Web';
-    font-weight: normal;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 1.2;
+    font-family: 'Guardian Sans Web';
+    font-size: 16px;
+    line-height: 1.3;
     color: $c-black;
     margin-bottom: 4px;
 }
