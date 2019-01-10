@@ -51,6 +51,8 @@
 
         @include mq(tablet) {
             width: 620px;
+            left: auto;
+            right: auto;
         }
     }
 }
@@ -79,10 +81,12 @@
 
 .uit-maybes__param {
     position: relative;
+    margin-bottom: 24px;
+    border-right: 1px solid $c-light-grey;
 
     svg {
         position: absolute;
-        top: -24px;
+        top: 0;
         right: 0;
         bottom: 0;
         left: 0;
@@ -90,6 +94,10 @@
         display: block;
         margin: auto;
         fill: $c-dem;
+    }
+
+    &:last-of-type {
+        border-right: 0;
     }
 }
 
