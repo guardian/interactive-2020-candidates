@@ -6,10 +6,10 @@
             <div class='uit-maybes__table'>
                 <div class='uit-maybes__row uit-maybes__row--titling'>
                     <div class='uit-maybes__row-title'></div>
-                    <div class='uit-maybes__row-title'>Visited Iowa</div>
-                    <div class='uit-maybes__row-title'>Book release</div>
-                    <div class='uit-maybes__row-title'>In polls</div>
-                    <div class='uit-maybes__row-title'>In their words</div>
+                    <div class='uit-maybes__row-title'></div>
+                    <div class='uit-maybes__row-title'>Iowa</div>
+                    <div class='uit-maybes__row-title'>Book</div>
+                    <div class='uit-maybes__row-title'>Polls</div>
                 </div>
                 {{#each candidates}}
                     {{#if_eq status 'Declared' }}
@@ -18,6 +18,14 @@
                             <div class='uit-maybes__candidate'>
                                 <span class='uit-maybes__name'>{{ name }}</span>
                                 <span class='uit-maybes__position'>{{ currentPosition }}</span>
+                            </div>
+                            <div class='uit-maybes__quote'>
+                                {{#if copy}}
+                                    <div class='uit-maybes__quote-background'>
+                                        {{> icons/quotemark }}
+                                        {{{ marked copy }}}
+                                    </div>
+                                {{/if}}
                             </div>
                             <div class='uit-maybes__param uit-maybes__param--iowa'>
                                 {{#if iowa}}
@@ -32,12 +40,6 @@
                             <div class='uit-maybes__param uit-maybes__param--polled'>
                                 {{#if polled}}
                                     {{> icons/check }}
-                                {{/if}}
-                            </div>
-                            <div class='uit-maybes__quote'>
-                                {{#if copy}}
-                                    {{> icons/quotemark }}
-                                    {{{ marked copy }}}
                                 {{/if}}
                             </div>
                         </div>

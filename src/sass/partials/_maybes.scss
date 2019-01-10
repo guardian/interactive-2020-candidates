@@ -10,12 +10,16 @@
 
 .uit-maybes__row {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 40px 40px 40px;
+    border-bottom: 1px solid $c-light-grey;
+    grid-gap: 10px;
+
+    @include mq(mobileLandscape) {
+        grid-gap: 20px;
+    }
 
     > * {
-        border-top: 1px solid $c-light-grey;
-        border-left: 1px solid $c-light-grey;
-        padding: 4px 6px;
+        padding: 4px 0px;
     }
 }
 
@@ -32,12 +36,7 @@
         z-index: 2;
         top: 0;
         background-color: $c-white;
-        max-width: 620px;
-
-        .uit-maybes__row-title {
-            border-top-color: white;
-            border-bottom: 1px solid $c-light-grey;
-        }
+        width: 620px;
     }
 }
 
@@ -47,6 +46,7 @@
     line-height: 1.3;
     font-weight: 600;
     color: $c-black;
+    padding-top: 6px;
 }
 
 .uit-maybes__name {
@@ -65,11 +65,11 @@
 
     svg {
         position: absolute;
-        top: 0;
+        top: -24px;
         right: 0;
         bottom: 0;
         left: 0;
-        height: 60px;
+        height: 50px;
         display: block;
         margin: auto;
         fill: $c-dem;
@@ -81,6 +81,8 @@
     font-size: 18px;
     line-height: 1.3;
     font-weight: normal;
+    font-style: italic;
+    margin-bottom: 28px;
 
     svg {
         margin-top: 0.3em;
@@ -88,5 +90,23 @@
         margin-right: 0.2em;
         float: left;
         fill: $c-dem;
+    }
+}
+
+.uit-maybes__quote-background {
+    position: relative;
+    background-color: $c-off-white;
+    padding: 3px;
+    box-sizing: border-box;
+
+    &:after {
+        content: '';
+        width: 1.5625rem;
+        height: 1.5625rem;
+        border-radius: 0 0 1.5625rem;
+        position: absolute;
+        bottom: -24px;
+        left: 24px;
+        background-color: $c-off-white;
     }
 }
