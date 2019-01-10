@@ -81,8 +81,12 @@
 
 .uit-maybes__param {
     position: relative;
-    margin-bottom: 24px;
-    border-right: 1px solid $c-light-grey;
+    margin-bottom: 4px;
+    border-left: 1px solid $c-light-grey;
+
+    @include mq(mobileLandscape) {
+        margin-bottom: 24px;
+    }
 
     svg {
         position: absolute;
@@ -95,10 +99,25 @@
         margin: auto;
         fill: $c-dem;
     }
+}
 
-    &:last-of-type {
-        border-right: 0;
+.uit-maybes__param--iowa {
+    @include mq(mobileLandscape) {
+        border-left: 0;
     }
+}
+
+.uit-maybes__dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: $c-light-grey;
 }
 
 .uit-maybes__quote {
@@ -118,6 +137,7 @@
         grid-column-end: 5;
         padding-right: 0;
         margin-bottom: 16px;
+        margin-top: 6px;
     }
 
     svg {
@@ -126,6 +146,10 @@
         margin-right: 0.2em;
         float: left;
         fill: $c-dem;
+    }
+
+    p {
+        margin-bottom: 4px;
     }
 }
 
@@ -137,9 +161,9 @@
 
     &:after {
         content: '';
-        width: 1.5625rem;
-        height: 1.5625rem;
-        border-radius: 0 0 1.5625rem;
+        width: 24px;
+        height: 24px;
+        border-radius: 0 0 24px;
         position: absolute;
         bottom: -24px;
         left: 24px;
