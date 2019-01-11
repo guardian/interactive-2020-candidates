@@ -18,7 +18,7 @@ export default {
             this.onScroll();
         }.bind(this));
 
-        $(window).load(function() {
+        $(window).on('load', function() {
             this.setHeights();
             this.onScroll();
         }.bind(this));
