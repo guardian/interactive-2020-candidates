@@ -16,6 +16,10 @@
 
     .uit-content {
         padding-bottom: 1px;
+
+        @include mq(leftCol) {
+            padding-top: 12px;
+        }
     }
 }
 
@@ -31,4 +35,26 @@ h3.uit-subhead {
     font-weight: 600;
     padding-top: 24px;
     margin-bottom: 7px !important;
+}
+
+.uit-body__caption {
+    font-family: 'Guardian Sans Web';
+    font-size: 14px;
+    line-height: 1.1;
+    color: $c-dark-grey;
+    margin: 0;
+    padding-bottom: 24px;
+
+    @include mq(leftCol) {
+        padding-bottom: 0;
+        position: absolute;
+        left: -160px;
+        top: 12px;
+        width: 140px;
+    }
+
+    @include mq(wide) {
+        left: -240px;
+        width: 220px;
+    }
 }
