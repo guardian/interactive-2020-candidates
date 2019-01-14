@@ -43,10 +43,10 @@ h3.uit-subhead {
     line-height: 1.1;
     color: $c-dark-grey;
     margin: 0;
-    padding-bottom: 24px;
+    padding: 6px 0 18px 0;
 
     @include mq(leftCol) {
-        padding-bottom: 0;
+        padding: 0;
         position: absolute;
         left: -160px;
         top: 12px;
