@@ -94,12 +94,10 @@
 }
 
 .uit-header__image {
+    position: relative;
     width: 100%;
-    margin: 0 auto;
 
     @include mq(leftCol) {
-        position: relative;
-        z-index: 2;
         margin-left: -160px;
         width: 780px;
     }
@@ -107,5 +105,43 @@
     @include mq(wide) {
         margin-left: -240px;
         width: 860px;
+    }
+}
+
+.uit-header__podium {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+}
+
+$total: 8;
+$timing: 16s;
+
+@keyframes fade {
+    0%, #{100% / $total - 2.5%}, 100% {
+        opacity: 1;
+    }
+    #{100% / $total}, 97% {
+        opacity: 0;
+    }
+}
+
+.uit-header__placard {
+    z-index: 4;
+    position: absolute;
+    top: 58%;
+    left: 30%;
+    width: 38%;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: $timing;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@for $i from 1 through $total {
+    .uit-header__placard--#{$i} {
+        animation-delay: -($timing / $total * $i);
     }
 }
