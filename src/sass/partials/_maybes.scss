@@ -24,6 +24,30 @@
     }
 }
 
+.uit-maybes__table--titling {
+    &.is-fixed {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        background-color: $c-white;
+        left: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+
+        @include mq(mobileLandscape) {
+            left: 20px;
+            right: 20px;
+            width: calc(100% - 40px);
+        }
+
+        @include mq(tablet) {
+            width: 620px;
+            left: auto;
+            right: auto;
+        }
+    }
+}
+
 .uit-maybes__row--titling {
     font-family: 'Guardian Sans Web';
     font-size: 16px;
@@ -34,28 +58,6 @@
 
     @include mq($until: mobileLandscape) {
         grid-template-columns: repeat(2, 1fr) repeat(3, 38px);
-    }
-
-    &.is-fixed {
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        background-color: $c-white;
-        left: 10px;
-        right: 10px;
-        width: calc(100vw - 20px);
-
-        @include mq(mobileLandscape) {
-            left: 20px;
-            right: 20px;
-            width: calc(100vw - 40px);
-        }
-
-        @include mq(tablet) {
-            width: 620px;
-            left: auto;
-            right: auto;
-        }
     }
 }
 

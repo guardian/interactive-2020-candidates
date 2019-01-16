@@ -3,7 +3,7 @@
         <div class='uit-content'>
             <h3 class='uit-subhead'>Who might run?</h3>
             <p>Proin blandit, enim vitae egestas posuere, neque elit ultricies dui, vel mattis nibh enim ac lorem. Maecenas molestie nisl sit amet velit dictum lobortis. Aliquam erat volutpat.</p>
-            <div class='uit-maybes__table'>
+            <div class='uit-maybes__table uit-maybes__table--titling'>
                 <div class='uit-maybes__row uit-maybes__row--titling'>
                     <div class='uit-maybes__row-title'></div>
                     <div class='uit-maybes__row-title'></div>
@@ -11,6 +11,9 @@
                     <div class='uit-maybes__row-title'>Book</div>
                     <div class='uit-maybes__row-title'>Polls</div>
                 </div>
+            </div>
+
+            <div class='uit-maybes__table'>
                 {{#each candidates}}
                     {{#if_eq status 'Declared' }}
                     {{ else }}

@@ -1,4 +1,4 @@
-const elementSelector = '.uit-maybes__row--titling'
+const elementSelector = '.uit-maybes__table--titling'
 let windowTop, elementPosition, elementHeight;
 
 export default {
