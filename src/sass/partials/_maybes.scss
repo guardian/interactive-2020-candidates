@@ -43,12 +43,12 @@
         background-color: $c-white;
         left: 10px;
         right: 10px;
-        width: calc(100% - 20px);
+        width: calc(100vw - 20px);
 
         @include mq(mobileLandscape) {
             left: 20px;
             right: 20px;
-            width: calc(100% - 40px);
+            width: calc(100vw - 40px);
         }
 
         @include mq(tablet) {

@@ -66,7 +66,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 0 24px;
+    padding: 3px 0 12px;
+
+    @include mq(tablet) {
+        padding-bottom: 24px;
+    }
 
     .uit-share {
         flex-shrink: 0;
@@ -130,7 +134,7 @@ $timing: 12s;
 .uit-header__placard {
     z-index: 4;
     position: absolute;
-    top: 58%;
+    top: 57%;
     left: 30%;
     width: 38%;
     opacity: 0;
