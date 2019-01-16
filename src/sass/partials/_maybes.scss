@@ -32,7 +32,9 @@
         background-color: $c-white;
         left: 10px;
         right: 10px;
+        padding-top: 200px;
         width: calc(100% - 20px);
+        transform: translateY(-200px);
 
         @include mq(mobileLandscape) {
             left: 20px;
@@ -49,6 +51,8 @@
 }
 
 .uit-maybes__row--titling {
+    position: relative;
+    z-index: 3;
     font-family: 'Guardian Sans Web';
     font-size: 16px;
     line-height: 1.3;

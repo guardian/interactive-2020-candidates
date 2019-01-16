@@ -34,10 +34,10 @@ export default {
 
         if (windowTop > elementPosition) {
             $(elementSelector).addClass('is-fixed');
-            $(elementSelector).parent().attr('style', 'padding-top: ' + elementHeight + 'px;');
+            $(elementSelector).next().attr('style', 'padding-top: ' + elementHeight + 'px;');
         } else {
             $(elementSelector).removeClass('is-fixed');
-            $(elementSelector).parent().removeAttr('style');
+            $(elementSelector).next().removeAttr('style');
         }
     }
 };
