@@ -116,7 +116,7 @@
 }
 
 $total: 8;
-$timing: 16s;
+$timing: 12s;
 
 @keyframes fade {
     0%, #{100% / $total - 2.5%}, 100% {
