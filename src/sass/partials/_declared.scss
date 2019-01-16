@@ -9,12 +9,21 @@
 .uit-declared__candidate {
     border-top: 1px solid $c-light-grey;
     margin: 12px 0;
+
+    @include mq(mobileLandscape, tablet) {
+        display: flex;
+    }
 }
 
 .uit-declared__avatar {
     max-width: 160px;
     float: left;
     margin-bottom: 4px;
+
+    @include mq(mobileLandscape) {
+        float: none;
+        align-self: flex-start;
+    }
 
     @include mq(tablet) {
         display: block;
