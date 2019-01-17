@@ -94,7 +94,7 @@ module.exports = {
         });
 
         handlebars.registerHelper('handlise', function(string) {
-            return string.replace(/ /g, '-').toLowerCase();
+            return string.replace(/ /g, '-').replace(/á/g, 'a').toLowerCase();
         });
 
         handlebars.registerHelper('markedCap', function(string) {
