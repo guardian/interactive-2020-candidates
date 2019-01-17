@@ -56,3 +56,15 @@
     color: $c-black;
     margin-bottom: 4px;
 }
+
+.uit-declared__description {
+    a {
+        color: $c-dem;
+        border-bottom: 1px solid lighten($c-dem, 20%);
+        text-decoration: none;
+
+        &:hover {
+            border-bottom-color: $c-dem;
+        }
+    }
+}
