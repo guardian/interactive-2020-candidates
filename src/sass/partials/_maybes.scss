@@ -98,18 +98,18 @@
     @include mq(mobileLandscape) {
         margin-bottom: 16px;
     }
+}
 
-    svg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 18px;
-        display: block;
-        margin: auto;
-        fill: $c-dem;
-    }
+.uit-maybes__check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    display: block;
+    margin: auto;
+    fill: $c-dem;
 }
 
 .uit-maybes__param--iowa {
