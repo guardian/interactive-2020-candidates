@@ -11,7 +11,9 @@
                                 <span class='uit-declared__name'>{{ name }}</span>
                                 <span class='uit-declared__position'>{{ currentPosition }}</span>
                                 <div class='uit-declared__description'>
-                                    {{{ marked copy }}}
+                                    {{#if copy}}
+                                        {{{ marked copy }}}
+                                    {{/if}}
                                 </div>
                             </div>
                         </div>
