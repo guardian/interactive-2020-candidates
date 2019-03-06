@@ -97,6 +97,10 @@ module.exports = {
             return string.replace(/ /g, '-').replace(/á/g, 'a').replace(/\'/g, '').toLowerCase();
         });
 
+        handlebars.registerHelper('break', function(string) {
+            return string.replace(/ /g, '<br />');
+        })
+
         handlebars.registerHelper('markedCap', function(string) {
             var markedIntro = markdown.toHTML(string);
             var intro = markedIntro.slice(3);
