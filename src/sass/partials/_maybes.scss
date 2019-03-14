@@ -6,6 +6,12 @@
     display: grid;
     grid-template-rows: auto;
     grid-auto-rows: 1fr;
+
+    .uit-subhead {
+        align-self: end;
+        padding-bottom: 6px;
+        border-bottom: 1px solid $c-light-grey;
+    }
 }
 
 .uit-maybes__row {

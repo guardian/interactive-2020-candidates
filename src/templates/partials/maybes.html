@@ -15,8 +15,49 @@
 
             <div class='uit-maybes__table'>
                 {{#each candidates}}
-                    {{#if_eq status 'Declared' }}
-                    {{ else }}
+                    {{#if_eq status 'Maybe' }}
+                        <div class='uit-maybes__row'>
+                            <div class='uit-maybes__candidate'>
+                                <span class='uit-maybes__name'>{{ name }}</span>
+                                <span class='uit-maybes__position'>{{ currentPosition }}</span>
+                            </div>
+                            <div class='uit-maybes__quote'>
+                                {{#if quote}}
+                                    <div class='uit-maybes__quote-background'>
+                                        {{> icons/quotemark }}
+                                        {{{ marked quote }}}
+                                    </div>
+                                {{/if}}
+                            </div>
+                            <div class='uit-maybes__param uit-maybes__param--iowa'>
+                                {{#if iowaNewHampshire }}
+                                    <img class='uit-maybes__check' src='{{ ../path }}/assets/check.svg' />
+                                {{ else }}
+                                    <div class='uit-maybes__dot'></div>
+                                {{/if}}
+                            </div>
+                            <div class='uit-maybes__param uit-maybes__param--book'>
+                                {{#if book}}
+                                    <img class='uit-maybes__check' src='{{ ../path }}/assets/check.svg' />
+                                {{ else }}
+                                    <div class='uit-maybes__dot'></div>
+                                {{/if}}
+                            </div>
+                            <div class='uit-maybes__param uit-maybes__param--polled'>
+                                {{#if polled}}
+                                    <img class='uit-maybes__check' src='{{ ../path }}/assets/check.svg' />
+                                {{ else }}
+                                    <div class='uit-maybes__dot'></div>
+                                {{/if}}
+                            </div>
+                        </div>
+                    {{/if_eq}}
+                {{/each}}
+
+                <h3 class='uit-subhead'>Who isn't running?</h3>
+
+                {{#each candidates}}
+                    {{#if_eq status 'No' }}
                         <div class='uit-maybes__row'>
                             <div class='uit-maybes__candidate'>
                                 <span class='uit-maybes__name'>{{ name }}</span>
