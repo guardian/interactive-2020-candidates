@@ -48,6 +48,7 @@
     "stevedore": "^0.1.4",
     "stringify": "^5.1.0",
     "sync-request": "^3.0.1",
+    "umbrellajs": "^3.1.0",
     "user-home": "^2.0.0"
   }
 }

@@ -27,6 +27,11 @@
     }
 }
 
+.uit-declared__overview-candidate--no-illo {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .uit-declared__overview-name {
     font-family: 'Guardian Egyptian Web';
     font-size: 14px;
@@ -54,6 +59,10 @@
         width: 940px;
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.uit-declared__candidate--no-illo {
+    padding-top: 6px;
 }
 
 .uit-declared__candidate {
