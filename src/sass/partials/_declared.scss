@@ -2,6 +2,10 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+
+    @include mq(desktop) {
+        width: 940px;
+    }
 }
 
 .uit-declared__overview-candidate {
@@ -13,7 +17,7 @@
     }
 
     @include mq(tablet) {
-        width: 11.111111111%;
+        width: 8.333333333%;
     }
 
     .uit-declared__avatar {
