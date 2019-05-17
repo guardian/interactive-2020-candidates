@@ -5,15 +5,15 @@
 }
 
 .uit-declared__overview-candidate {
-    width: 25%;
-    color: $c-light-blue;
+    width: 20%;
+    color: $c-black;
 
     @include mq(mobileLandscape) {
-        width: 20%;
+        width: 12.5%;
     }
 
     @include mq(tablet) {
-        width: 16.666667%;
+        width: 11.111111111%;
     }
 
     .uit-declared__avatar {
@@ -21,7 +21,7 @@
     }
 
     &:hover {
-        color: $c-black;
+        color: $c-light-blue;
         text-decoration: none;
         border: 0;
     }
@@ -33,18 +33,17 @@
 }
 
 .uit-declared__overview-name {
-    font-family: 'Guardian Egyptian Web';
+    font-family: 'Guardian Sans Web';
     font-size: 14px;
     line-height: 18px;
-    font-weight: 600;
     text-align: center;
     transition: color 0.3s linear;
     margin-top: -6px;
     margin-bottom: 4px;
 
     @include mq(tablet) {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 16px;
     }
  }
 
